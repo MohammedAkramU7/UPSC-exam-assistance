@@ -27,9 +27,9 @@ It generates **cheat sheets, mnemonics, Q&A, MCQs, study plans, and more** — i
 
 ## 🖼️ UI Preview
 
-| Home Page | Output Section |
-|-----------|---------------|
-| ![Home Page](https://via.placeholder.com/450x250?text=Home+Page) | ![Output Section](https://via.placeholder.com/450x250?text=Output) |
+| Home Page |
+|-----------|
+| ![Home Page](https://via.placeholder.com/600x300?text=Home+Page) |
 
 ---
 
