@@ -1,8 +1,6 @@
 [build]
-  base = "my-upsc-ai"      # folder where package.json lives
+  base = "my-upsc-ai"
   command = "npm run build"
-  publish = ".next"
-  functions = "netlify/functions"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
