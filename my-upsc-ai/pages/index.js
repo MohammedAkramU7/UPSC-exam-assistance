@@ -39,11 +39,81 @@ export default function Home() {
     }
   }
 
+  // JSON-LD structured data for SEO
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "UPSC AI Exam Assistant",
+    "url": "https://upsc-exam-assistance.netlify.app/",
+    "applicationCategory": "EducationApplication",
+    "description": "AI-powered UPSC & Govt exam preparation tool. Generate cheat notes, mnemonics, Q&A, mock tests, study plans, and current affairs summaries in multiple languages.",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    }
+  };
+
   return (
     <>
       <Head>
-        <title>UPSC AI Exam Assistant</title>
+        {/* Basic SEO */}
+        <title>UPSC AI Exam Assistant | Free UPSC & Govt Exam Preparation Tool</title>
+        <meta
+          name="description"
+          content="Prepare for UPSC & Govt exams with our free AI-powered assistant. Get cheat notes, mnemonics, Q&A, MCQs, study plans, and current affairs summaries in English, Hindi, Urdu, Tamil, and Bengali."
+        />
+        <meta
+          name="keywords"
+          content="UPSC AI Assistant, UPSC preparation, govt exam preparation, UPSC cheat notes, UPSC mnemonics, UPSC study plan, current affairs UPSC, UPSC MCQs"
+        />
+        <meta name="author" content="UPSC AI Exam Assistant" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph (Facebook, LinkedIn) */}
+        <meta property="og:title" content="UPSC AI Exam Assistant" />
+        <meta
+          property="og:description"
+          content="AI-powered UPSC & Govt exam preparation tool in English, Hindi, Urdu, Tamil, and Bengali."
+        />
+        <meta
+          property="og:image"
+          content="https://upsc-exam-assistance.netlify.app/og-image.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://upsc-exam-assistance.netlify.app/"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="UPSC AI Exam Assistant" />
+        <meta
+          name="twitter:description"
+          content="AI-powered UPSC & Govt exam preparation tool in multiple languages."
+        />
+        <meta
+          name="twitter:image"
+          content="https://upsc-exam-assistance.netlify.app/og-image.jpg"
+        />
+
+        {/* Multi-language hints */}
+        <link rel="alternate" href="https://upsc-exam-assistance.netlify.app/" hrefLang="en" />
+        <link rel="alternate" href="https://upsc-exam-assistance.netlify.app/" hrefLang="hi" />
+        <link rel="alternate" href="https://upsc-exam-assistance.netlify.app/" hrefLang="ur" />
+        <link rel="alternate" href="https://upsc-exam-assistance.netlify.app/" hrefLang="ta" />
+        <link rel="alternate" href="https://upsc-exam-assistance.netlify.app/" hrefLang="bn" />
+        <link rel="canonical" href="https://upsc-exam-assistance.netlify.app/" />
+
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
       </Head>
+
       <div className="container">
         <h1>🧠 UPSC & Govt Exam AI Assistant</h1>
 
