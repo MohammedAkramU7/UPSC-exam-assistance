@@ -1,7 +1,6 @@
 [build]
-  base = "my-upsc-ai"
-  publish = "dist"
-  command = "npm run build"
+base = "my-upsc-ai"
+command = "npm run build"
 
 [[plugins]]
-  package = "@netlify/plugin-nextjs"
+package = "@netlify/plugin-nextjs"
