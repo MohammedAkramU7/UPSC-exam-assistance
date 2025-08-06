@@ -29,7 +29,7 @@ It generates **cheat sheets, mnemonics, Q&A, MCQs, study plans, and more** — i
 
 | Home Page |
 |-----------|
-| ![Home Page](https://via.placeholder.com/600x300?text=Home+Page) |
+| ![Home Page](https://upsc-exam-assistance.netlify.app/) |
 
 ---
 
