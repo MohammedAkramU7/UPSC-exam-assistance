@@ -1,5 +1,6 @@
 [build]
   base = "my-upsc-ai"
+  publish = "dist"
   command = "npm run build"
 
 [[plugins]]
